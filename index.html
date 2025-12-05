@@ -77,9 +77,24 @@
             50% { transform: translateY(-20px); }
         }
         
-        .quote-card {
+        .quote-card 
+        {
             background: linear-gradient(135deg, #fff8f0 0%, #f5e6d3 100%);
             border-left: 4px solid #8b6f47;
+        }
+        .nav-egg 
+        {
+            background: #fff6e6;
+            padding: 8px 18px;
+            border-radius: 50% / 40%;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+            transition: 0.2s ease;
+        }
+
+        .nav-egg:hover {
+            background: #fff6e6;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.18);
         }
     </style>
 </head>
@@ -89,16 +104,16 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='80' fill='%23f5ddb8'/%3E%3Cellipse cx='100' cy='100' rx='80' ry='90' fill='none' stroke='%238b6f47' stroke-width='2'/%3E%3Cpath d='M 40 80 Q 100 60 160 80' fill='none' stroke='%238b6f47' stroke-width='2'/%3E%3Cpath d='M 40 120 Q 100 140 160 120' fill='none' stroke='%238b6f47' stroke-width='2'/%3E%3Crect x='70' y='95' width='60' height='20' rx='10' fill='%23c48c4e'/%3E%3Ctext x='100' y='110' font-family='Arial' font-size='10' fill='white' text-anchor='middle'%3EThe Desi Egg%3C/text%3E%3C/svg%3E" alt="The Desi Egg" class="h-12 w-12">
+                    <img src="logo.jpg" alt="The Desi Egg" class="h-12 w-12">
                     <span class="ml-3 text-2xl heading-font font-bold text-amber-900">The Desi Egg</span>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="nav-link text-gray-700 font-medium">Home</a>
-                    <a href="#about" class="nav-link text-gray-700 font-medium">About</a>
-                    <a href="#products" class="nav-link text-gray-700 font-medium">Products</a>
-                    <a href="#benefits" class="nav-link text-gray-700 font-medium">Benefits</a>
-                    <a href="#gallery" class="nav-link text-gray-700 font-medium">Gallery</a>
-                    <a href="#contact" class="nav-link text-gray-700 font-medium">Contact</a>
+                    <a href="#home" class="nav-link nav-egg text-gray-700 font-medium">Home</a>
+                    <a href="#about" class="nav-link nav-egg text-gray-700 font-medium">About</a>
+                    <a href="#products" class="nav-link nav-egg text-gray-700 font-medium">Products</a>
+                    <a href="#benefits" class="nav-link nav-egg text-gray-700 font-medium">Benefits</a>
+                    <a href="#gallery" class="nav-link nav-egg text-gray-700 font-medium">Gallery</a>
+                    <a href="#contact" class="nav-link nav-egg text-gray-700 font-medium">Contact</a>
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden text-gray-700">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -110,12 +125,12 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-amber-50">Home</a>
-                <a href="#about" class="block px-3 py-2 text-gray-700 hover:bg-amber-50">About</a>
-                <a href="#products" class="block px-3 py-2 text-gray-700 hover:bg-amber-50">Products</a>
-                <a href="#benefits" class="block px-3 py-2 text-gray-700 hover:bg-amber-50">Benefits</a>
-                <a href="#gallery" class="block px-3 py-2 text-gray-700 hover:bg-amber-50">Gallery</a>
-                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:bg-amber-50">Contact</a>
+                <a href="#home" class="nav-egg block px-3 py-2 text-gray-700 hover:bg-amber-50">Home</a>
+                <a href="#about" class="nav-egg block px-3 py-2 text-gray-700 hover:bg-amber-50">About</a>
+                <a href="#products" class="nav-egg block px-3 py-2 text-gray-700 hover:bg-amber-50">Products</a>
+                <a href="#benefits" class="nav-egg block px-3 py-2 text-gray-700 hover:bg-amber-50">Benefits</a>
+                <a href="#gallery" class="nav-egg block px-3 py-2 text-gray-700 hover:bg-amber-50">Gallery</a>
+                <a href="#contact" class="nav-egg block px-3 py-2 text-gray-700 hover:bg-amber-50">Contact</a>
             </div>
         </div>
     </nav>
@@ -143,7 +158,7 @@
                     </div>
                 </div>
                 <div data-aos="fade-left" class="floating">
-                    <img src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=600" alt="Fresh Eggs" class="rounded-3xl shadow-2xl">
+                    <img src="Do-you-like-eggs.jpg" alt="Fresh Eggs" class="rounded-3xl shadow-2xl">
                 </div>
             </div>
         </div>
